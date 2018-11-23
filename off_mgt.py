@@ -121,10 +121,10 @@ def convert_quantity(str_qty):
 
     if len(lst_dict) == 0:
         return dict_qty
-
+      
     elif len(lst_dict) == 1:
         return lst_dict[0]
-
+      
     else:
         df = pd.DataFrame(lst_dict) 
         # Return the most precise quantity (g, kg, mg > everything else),
